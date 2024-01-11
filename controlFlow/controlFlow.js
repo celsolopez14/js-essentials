@@ -47,3 +47,22 @@ console.log("Access Level:", accessLevel);
 console.log("User Message:", userMessage);
 console.log("User Category:", userCategory);
 console.log("Authentication Status:", authenticationStatus);
+
+let person = "person";
+let dietaryService;
+
+switch(person){
+    case "employee":
+        dietaryService = "Access to Dietary Services!";
+        break;
+    case "enrolledMember":
+        dietaryService = "Access to Dietary Services and One on One interaction with a dietician!"
+        break;
+    case "subscriber":
+        dietaryService = "Partial access to facilitate Dietary Services only!";
+        break;
+    default:
+        dietaryService = "Please enroll or subscribe first to avail this facility.";
+}
+
+console.log("Dietary Service:", dietaryService);
